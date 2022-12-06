@@ -1,0 +1,289 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(#1A032D, #2C0847);
+    background-repeat: no-repeat;
+    height: 170vh;
+    width: 100vw;
+    overflow: hidden;
+    filter: drop-shadow(8px 7px 6px rgba(0, 0, 0, 0.247));
+    border: 0px;
+}
+
+header {
+    padding-top: 15px;
+    position: relative;
+    height: 80px;
+}
+
+.seta {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1320px;
+    padding: 0 24px;
+}
+
+header img {
+    width: 60px;
+    position: absolute;
+}
+
+header h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.grid_carrinhos {
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    gap: 30px 70px;
+    max-width: max-content;
+    align-items: center;
+}
+
+.carrinho_pedido {
+    padding: 3px;
+    min-height: 40vh;
+    background-color: #FFFFFF;
+    border-radius: 17px;
+}
+
+.grid_pedidos {
+    display: grid;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    grid-template-columns: 7fr 1fr;
+
+}
+
+.produto_valor {
+    margin: 3px;
+    padding: 3px;
+    border: 2px #646363 solid;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.produto_valor2 {
+    margin: 3px;
+    padding: 3px;
+    border: 2px #646363 solid;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.produto_valor2 p {
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.imagem_nome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagem_nome img {
+    border-radius: 13px;
+    width: 80px;
+    height: 80px;
+    margin: 0px 2px;
+}
+
+.imagem_nome h1 {
+    margin: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.produto_valor p {
+    font-size: x-large;
+    float: right;
+    margin-right: 15px;
+    color: black;
+}
+
+.contagem_pedidos {
+    display: flex;
+    margin: 2px;
+    padding: 10px;
+    border: 2px solid #646363;
+    border-radius: 17px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contagem_pedidos input {
+    width: 60px;
+    height: 100%;
+    text-align: center;
+    font-size: 38px;
+    border-style: none;
+    background: #fff;
+    color: black;
+    font-weight: 500;
+}
+
+.contagem_pedidos button {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-style: none;
+}
+
+#bt1 {
+    border-radius: 17px 0px 0px 17px;
+    float: left;
+}
+
+#bt2 {
+    border-radius: 0px 17px 17px 0px;
+    float: right;
+}
+
+.carrinho_conta {
+    padding: 3px;
+    height: 300px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow-y: scroll;
+
+}
+
+.conta_button {
+    background-image: linear-gradient(to right, #FF8008 0%, #FFC837 51%, #FF8008 100%);
+    margin: 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 17px;
+    display: flex;
+    border: 0;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 120px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.conta_button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 850px) {
+
+    .grid_pedidos {
+        grid-template-columns: 7fr;
+
+    }
+
+    .produto_valor {
+        border-radius: 17px 17px 0px 0px;
+        margin-bottom: 0px;
+    }
+
+    .contagem_pedidos {
+        border-radius: 0px 0px 17px 17px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        border-top-color: #FFFFFF;
+    }
+
+    body {
+
+        overflow-y: scroll;
+        height: 200vh;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .grid_carrinhos {
+        grid-template-columns: 7fr;
+        justify-items: center;
+        gap: 10px;
+
+    }
+
+    body {
+
+        overflow-y: scroll;
+
+    }
+
+    .conta_button {
+        background-image: linear-gradient(to right, #FF8008 0%, #FFC837 51%, #FF8008 100%);
+        margin: 10px;
+        margin-bottom: 50px;
+        padding: 0px 20px;
+        padding-bottom: 7px;
+        text-align: center;
+        transition: 0.5s;
+        background-size: 200% auto;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        border: 0;
+        width: 250px;
+        height: 60px;
+    }
+
+    .conta_button:hover {
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .carrinho_conta {
+        width: 100%;
+    }
+
+    .carrinho_pedido {
+        width: 100%;
+    }
+}
+
+.imagem_nome img {
+    border: solid 1px #646363;
+    margin: 3px;
+}
+
+.cabecalho_imagem button {
+    background: transparent;
+    border: 0;
+}
+
+.produto_valor2 img {
+    filter: grayscale(70%);
+}

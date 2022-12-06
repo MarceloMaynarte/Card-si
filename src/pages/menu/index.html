@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;800&family=Roboto:wght@400;900&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Menux</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="content">
+                <header>
+                    <a href="../home-page/index.html"><img class="seta" src="assets/images/seta-esquerda.png"
+                            alt="Seta"></a>
+                    <h1>Cardápio</h1>
+                    <div class="buttons">
+                        <div class="garcom">
+                            <button onclick="waiterAlert()" id="waiterAlert" class="button"><img
+                                    src="assets/images/garcom.png" alt="Garçom"></button>
+                            <p>Garçom</p>
+                        </div>
+                        <div class="carrinho">
+                            <a class="button" href="../carrinho/index.html?id-mesa=1">
+                                <img src="assets/images/bolsa.png" alt="Carrinho">
+                                <div id="item-number" class="item-number">
+                                    <input id="inputCarNumber" type="text" disabled="disabled" value="0">
+                                </div>
+                            </a>
+                            <p>Carrinho</p>
+                        </div>
+                    </div>
+                </header>
+                <section class="pesquisa">
+                    <div class="search-bar">
+                        <img class="lupa" src="assets/images/lupa.png" alt="Lupa">
+                        <input type="search" placeholder="Pesquisar">
+                        <img class="filtro" src="assets/images/filtro.png" alt="Filtro">
+                    </div>
+                </section>
+
+                <section>
+                    <div class="categories">
+                        <button onclick="view(this)" id="entradas" class="btn active-btn">
+                            Entradas
+                        </button>
+
+                        <button onclick="view(this)" id="porcoes" class="btn">
+                            Porções
+                        </button>
+
+                        <button onclick="view(this)" id="bebidas" class="btn">
+                            Bebidas
+                        </button>
+
+                        <button onclick="view(this)" id="pratos" class="btn">
+                            Pratos
+                        </button>
+
+                        <button onclick="view(this)" id="doces" class="btn">
+                            Doces
+                        </button>
+                    </div>
+                </section>
+
+                <section class="content1">
+                    <div class="slider">
+                        <div id="card-entradas" class="card-entradas cards active-carrossel"></div>
+
+                        <div id="card-porcoes" class="card-porcoes cards"></div>
+
+                        <div id="card-bebidas" class="card-bebidas cards"></div>
+
+                        <div id="card-pratos" class="card-pratos cards"></div>
+
+                        <div id="card-doces" class="card-doces cards"></div>
+                    </div>
+                    <!-- <div id="add-car">
+                        <button onclick="addToCar()" id="btn-add-car">Adicionar ao carrinho</button>
+                    </div> -->
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

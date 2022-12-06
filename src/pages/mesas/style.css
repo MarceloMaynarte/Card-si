@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    text-align: center;
+    padding: 15px;
+    font-size: 40px;
+    color: white ;
+}
+html,body{
+    background-color: #1A032D;
+    height: 100vh;
+}
+button{
+    width: 450px;
+    height: 150px;
+    border-radius: 100px;
+    border: 0;
+}
+footer{
+    margin: 10px 0;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 24px;
+    max-width: 1320px;
+}
+.mesas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.mesas button{
+    margin: 7px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.livre{
+    background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+}
+.livre:hover{
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+}
+.ocupada{
+    background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
+    transition: 0.5s;
+    background-size: 200% auto;       
+}
+.ocupada:hover{
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+}
+.final{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    color: white ;
+    justify-content: center;
+    align-items: center;
+}
+.final ul{
+    display: flex;
+    gap: 50px;
+}
+.final ul li{
+    display: inline-flex;
+    align-items: center;
+}
+.final p{
+    font-weight: 600;
+}
+.bullet-livre{
+    background-image: linear-gradient(to right, #1D976C 0%, #93F9B9  51%, #1D976C  100%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.bullet-ocupado{
+    background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.bullet-garcom{
+    background-color: rgb(182, 0, 0);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.bullet-garcom img{
+    width: 20px;
+} 
+ .bullet-garcom-mesa{
+    position: fixed;
+    top: 70px;
+    background-color: rgb(182, 0, 0);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.bullet-garcom-mesa img{
+    width: 35px;
+}
+@media screen and (max-width:1490px){
+    button{
+        width: 400px;
+    }
+}
+@media screen and (max-width:1340px){
+    button{
+        width: 350px;
+        height: 130px;
+    }
+}
+@media screen and (max-width:1190px){
+    button{
+        width: 300px;
+        height: 120px;
+    }
+    .bullet-garcom-mesa img{
+        width: 35px;
+    } 
+}
+@media screen and (max-width:1040px){
+    .mesas{
+        justify-content: center;
+    }
+    button{
+        width: 300px;
+        height: 100px;
+    }
+    .bullet-garcom-mesa img{
+        width: 35px;
+    } 
+}
+@media screen and (max-width:599px){
+    .final{
+        font-size: 15px;
+    }
+    .bullet-livre{
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+    }
+    .bullet-ocupado{
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+    }
+    .bullet-garcom{
+        width: 20px;
+        height: 20px;
+    }
+    .bullet-garcom img{
+        width: 18px;
+    }  
+}
+@media screen and (max-width:360px){
+    button{
+        height: 60px;
+    }
+    .mesas button{
+        font-size: 30px;
+    }
+    .bullet-garcom-mesa{
+        width: 35px;
+        height: 35px;
+    }
+    .bullet-garcom-mesa img{
+        width: 20px;
+    }
+    .final ul{
+        gap: 10px;
+    }
+}

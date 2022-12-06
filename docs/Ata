@@ -1,0 +1,13 @@
+Ata dia 07/11/22
+
+Tarefas: Adicionar barra de rolagem no scroll da pagina menu, adicionar foto preta e branca no carrinho para itens consumidos na pagina do carrinho,
+objetos de javascript para cada card de comidas, barra de pesquisa funcional em javascript, filtro da barra de pesquisa, botão de garçom com um pop-up notificando,
+vincular o aplicativo do adm com o aplicativo do cliente, fazer a mesa da pagina de mesas direcionar para o carrinho da respectiva mesa.
+
+Guilherme Gonçalves: Adicionei a barra de rolarem no menu, e a foto preta e branca nos consumidos do carrinho;
+
+João Mattos: Vou fazer a barra de pesquisa funcional em javascript e filtro da barra de pesquisa;
+
+Ygor Meirelles: Sobre a finalização do pedido, o fiz consumir os pedidos que foram solecionados e confirmados no carrinho;
+
+Henrique Martins: Tornei funcional os botões de adicionar e remover itens, e linkei a um LocalStorage, organizei o json.
